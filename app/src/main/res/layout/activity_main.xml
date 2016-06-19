@@ -5,6 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#673AB7"
     tools:context="com.example.devindesktop.cookiesudacity.MainActivity">
 
     <LinearLayout
@@ -12,30 +13,41 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/cookie_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="11"
-        android:src="@drawable/before_cookie"
-        android:scaleType="centerCrop"/>
-
-    <TextView
-        android:id="@+id/text_swap"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="2"
-        android:text="Hello World!"
-        android:padding="8dp"
-        android:textSize="24sp"/>
-
-        <Button
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/cookie_image_view"
+            android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:padding="8dp"
-            android:layout_weight="1"
-            android:text="Hello World!"
-            android:onClick="runSwap"/>
+            android:layout_weight="11"
+            android:scaleType="centerCrop"
+            android:src="@drawable/before_cookie" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_swap"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="I'm Hungry!"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/eat_cookie_button"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:onClick="runSwap"
+                android:layout_marginLeft="16dp"
+                android:text="Hello World!"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
 
     </LinearLayout>
 
